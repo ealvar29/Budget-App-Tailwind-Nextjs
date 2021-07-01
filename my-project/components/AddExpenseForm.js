@@ -1,31 +1,35 @@
 const AddExpenseForm = () => {
   return (
     <form>
-      <div className="row">
-        <div className="col-sm">
+      <div className="grid grid-cols-2">
+        <div className="text-center">
           <label for="name">Name</label>
+        </div>
+        <div className="">
           <input
             required="required"
             type="text"
-            className="form-control"
+            className="border border-red-600 form-control"
             id="name"
           ></input>
         </div>
-        <div className="col-sm">
+        <div className="text-center">
           <label for="cost">Cost</label>
+        </div>
+        <div className="">
           <input
             required="required"
             type="text"
-            className="form-control"
+            className="border border-red-600 form-control"
             id="cost"
           ></input>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-sm">
-          <button type="submit" className="mt-3 btn btn-primary">
-            Save
-          </button>
+        <div className="text-center">
+          <div className="">
+            <button type="submit" className="mt-3 btn btn-primary">
+              Save
+            </button>
+          </div>
         </div>
       </div>
     </form>
